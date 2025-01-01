@@ -3,6 +3,8 @@ import HomeLeyout from "../Leyout/homeLeyout";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import CategoryNews from "../Components/Pages/categoryNews";
 import AuthLeyout from "../Leyout/AuthLeyout/AuthLeyout";
+import Login from "../Leyout/AuthLeyout/Login/Login";
+import Register from "../Leyout/AuthLeyout/Register/Register";
 
 
 
@@ -32,11 +34,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/auth/login',
-                element: <h2>login section</h2>
+                element: <Login></Login>
             },
             {
                 path: '/auth/register',
-                element: <h2>Register section</h2>
+                element: <Register></Register>
             }
         ]
     },
