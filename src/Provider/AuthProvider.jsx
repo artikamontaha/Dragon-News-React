@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/Firebase.config";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -29,7 +29,7 @@ const AuthProvider = ({ children }) => {
     }
 
     const UpdateProfile = (updatedData) =>{
-        return (auth.currentUser, updatedData)
+        return updateProfile(auth.currentUser, updatedData)
     }
 
 
