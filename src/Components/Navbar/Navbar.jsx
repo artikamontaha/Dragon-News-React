@@ -5,7 +5,7 @@ import { useContext } from "react";
 import toast from "react-hot-toast";
 const Navbar = () => {
     const { user,userLogout } = useContext(AuthContext)
-    console.log(user)
+    
     const handlelogout = () => {
        userLogout()
         .then(() => {

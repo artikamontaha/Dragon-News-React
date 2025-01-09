@@ -3,7 +3,6 @@ import SingleNewsCart from "../SingleNewsCart/SingleNewsCart";
 
 const CategoryNews = () => {
     const { data: news } = useLoaderData();
-    // console.log(news)
 
     return (
         <div>

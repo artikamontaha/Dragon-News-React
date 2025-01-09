@@ -7,7 +7,6 @@ const Login = () => {
 
     const { UserLogin, setUser } = useContext(AuthContext);
     const location = useLocation();
-    console.log(location);   
     const navigate = useNavigate() 
 
 
@@ -17,7 +16,6 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({ email, password });
 
         UserLogin(email, password)
             .then(result => {
